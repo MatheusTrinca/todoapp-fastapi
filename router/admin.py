@@ -5,8 +5,8 @@ from starlette import status
 from typing import Annotated
 
 from database import SessionLocal
-from models import Todos, Users
-from router.auth import get_current_user
+from models import Todos
+from .auth import get_current_user
 
 router = APIRouter(
     prefix='/admin',
